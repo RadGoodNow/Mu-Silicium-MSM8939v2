@@ -14,6 +14,6 @@ python3 ./Resources/Scripts/mkbootimg.py \
   --tags_offset 0x00008000 \
   --os_version 13.0.0 \
   --os_patch_level "$(date '+%Y-%m')" \
-  --header_version 1 \
+  --header_version 3 \
   -o Mu-ido.img \
   ||_error "\nFailed to create Android Boot Image!\n"
