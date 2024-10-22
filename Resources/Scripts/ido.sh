@@ -5,15 +5,4 @@ cat ./BootShim/AARCH64/BootShim.bin "./Build/idoPkg/${_TARGET_BUILD_MODE}_CLANGP
 gzip -c < "./Build/idoPkg/${_TARGET_BUILD_MODE}_CLANGPDB/FV/IDO_UEFI.fd-bootshim" >./uefi.img
 cat ./Resources/DTBs/ido.dtb > ./uefi.img||exit 1
 
-# Create bootable Android boot.img
-python3 ./Resources/Scripts/mkbootimg.py \
-  --kernel ./Resources/bootpayload.bin \
-  --ramdisk ./Resources/ramdisk \
-  --kernel_offset 0x00008000 \
-  --ramdisk_offset 0x00008000 \
-  --tags_offset 0x00008000 \
-  --os_version 13.0.0 \
-  --os_patch_level "$(date '+%Y-%m')" \
-  --header_version 3 \
-  -o Mu-ido.img \
-  ||_error "\nFailed to create Android Boot Image!\n"
+
