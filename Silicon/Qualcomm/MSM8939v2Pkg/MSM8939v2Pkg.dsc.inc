@@ -29,10 +29,10 @@
 [PcdsFixedAtBuild]
   # Timer
   gArmTokenSpaceGuid.PcdArmArchTimerFreqInHz|19200000
-  gArmTokenSpaceGuid.PcdArmArchTimerSecIntrNum|17
-  gArmTokenSpaceGuid.PcdArmArchTimerIntrNum|18
-  gArmTokenSpaceGuid.PcdArmArchTimerVirtIntrNum|27
-  gArmTokenSpaceGuid.PcdArmArchTimerHypIntrNum|26
+  gArmTokenSpaceGuid.PcdArmArchTimerSecIntrNum|18
+  gArmTokenSpaceGuid.PcdArmArchTimerIntrNum|19
+  gArmTokenSpaceGuid.PcdArmArchTimerVirtIntrNum|20
+  gArmTokenSpaceGuid.PcdArmArchTimerHypIntrNum|17
 
   # GIC
   gArmTokenSpaceGuid.PcdGicDistributorBase|0xb000000
@@ -40,7 +40,7 @@
   gArmTokenSpaceGuid.PcdGicInterruptInterfaceBase|0xb002000
 
   # ACPI
-  gEfiMdeModulePkgTokenSpaceGuid.PcdAcpiDefaultOemRevision|0x00000660
+  gEfiMdeModulePkgTokenSpaceGuid.PcdAcpiDefaultOemRevision|0x00000616
 
   # SmBios
   gSiliciumPkgTokenSpaceGuid.PcdSmbiosProcessorModel|"Snapdragon (TM) 616 @ 1.70 GHz"
