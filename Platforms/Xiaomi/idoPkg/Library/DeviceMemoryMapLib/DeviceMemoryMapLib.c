@@ -6,7 +6,7 @@ gDeviceMemoryDescriptorEx[] = {
   // Name, Address, Length, HobOption, ResourceAttribute, ArmAttributes, ResourceType, MemoryType
 
   // DDR Regions
-  {"Display Reserved",  0x83000000, 0x2000000,  AddMem, MEM_RES, SYS_MEM_CAP, Reserv, WRITE_THROUGH_XN},
+  {"Display Reserved",  0x83200000, 0x2000000,  AddMem, MEM_RES, SYS_MEM_CAP, Reserv, WRITE_THROUGH_XN},
   {"TZApps",            0x8c400000, 0x1900000,  NoHob,  SYS_MEM, SYS_MEM_CAP, Reserv, NS_DEVICE},
   {"PIL Reserved",      0x8be00000, 0x600000,   AddMem, MEM_RES, UNCACHEABLE, Reserv, UNCACHED_UNBUFFERED_XN},
   {"DXE Heap",          0x90000000, 0x04500000, AddMem, SYS_MEM, SYS_MEM_CAP, Conv,   WRITE_BACK_XN},
