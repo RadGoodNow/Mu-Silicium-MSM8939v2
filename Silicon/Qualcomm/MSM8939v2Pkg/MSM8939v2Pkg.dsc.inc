@@ -67,7 +67,7 @@
   ResetSystemLib|ArmPkg/Library/ArmSmcPsciResetSystemLib/ArmSmcPsciResetSystemLib.inf
   SoCPlatformLib|MSM8939v2Pkg/Library/SoCPlatformLib/SoCPlatformLib.inf
 
-[Components]
-  MSM8939v2Pkg/Drivers/SmBiosTableDxe/SmBiosTableDxe.inf
+#[Components]
+#  MSM8939v2Pkg/Drivers/SmBiosTableDxe/SmBiosTableDxe.inf
 
 !include QcomPkg/QcomPkg.dsc.inc
