@@ -10,10 +10,9 @@ APRIORI DXE {
   # Next, install cpu protocol and enable the interrupt controller
   INF ArmPkg/Drivers/CpuDxe/CpuDxe.inf
   INF ArmPkg/Drivers/ArmGic/ArmGicDxe.inf
-
+  INF ArmPkg/Drivers/TimerDxe/TimerDxe.inf
   # Core Drivers
   INF EmbeddedPkg/MetronomeDxe/MetronomeDxe.inf
-
   INF MdeModulePkg/Universal/Variable/RuntimeDxe/VariableRuntimeDxe.inf
   INF MdeModulePkg/Universal/ResetSystemRuntimeDxe/ResetSystemRuntimeDxe.inf
   INF MdeModulePkg/Universal/WatchdogTimerDxe/WatchdogTimer.inf
