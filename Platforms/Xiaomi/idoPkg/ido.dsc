@@ -33,6 +33,7 @@
   DeviceMemoryMapLib|idoPkg/Library/DeviceMemoryMapLib/DeviceMemoryMapLib.inf
   DeviceConfigurationMapLib|idoPkg/Library/DeviceConfigurationMapLib/DeviceConfigurationMapLib.inf
   DevicePrePiLib|idoPkg/Library/DevicePrePiLib/DevicePrePiLib.inf
+  KeypadDeviceLib|idoPkg/Library/KeypadDeviceLib/KeypadDeviceLib.inf
 
 [PcdsFixedAtBuild]
   # DDR Start Address
@@ -81,5 +82,10 @@
   gEfiMdeModulePkgTokenSpaceGuid.PcdSetupConOutRow|67
   gEfiMdeModulePkgTokenSpaceGuid.PcdConOutColumn|90
   gEfiMdeModulePkgTokenSpaceGuid.PcdConOutRow|67
+
+
+[Components]
+  SiliciumPkg/Drivers/KeypadDxe/KeypadDxe.inf
+  SiliciumPkg/Drivers/KeypadDeviceDxe/KeypadDeviceDxe.inf
 
 !include MSM8939v2Pkg/MSM8939v2Pkg.dsc.inc

@@ -1,0 +1,8 @@
+[Defines]
+  DEC_SPECIFICATION                   = 0x00010005
+  PACKAGE_NAME                        = idoPkg
+  PACKAGE_GUID                        = 5f2db4dd-4747-409f-a532-88a15af3aabe
+  PACKAGE_VERSION                     = 0.1
+
+[Protocols]
+  gEfiIdoGpioProtocolGuid           = {0x0145CB2C, 0xBB04, 0x4C88, {0x87, 0x7B, 0x2F, 0xCA, 0x7D, 0xF6, 0x22, 0xED} }
