@@ -60,14 +60,47 @@
   gQcomPkgTokenSpaceGuid.PcdEnableFvDecompressHob|FALSE
   gQcomPkgTokenSpaceGuid.PcdEnableProdmodeHob|FALSE
 
+  # SoC Drivers GPIO TLMM
+  gQcomTokenSpaceGuid.PcdGpioTlmmBaseAddress|0x1000000
+  gQcomTokenSpaceGuid.PcdGpioTlmmSummaryIrq|256
+  gQcomTokenSpaceGuid.PcdGpioTlmmIoOffset|0x1004
+  gQcomTokenSpaceGuid.PcdGpioTlmmIoElementSize|0x10
+  gQcomTokenSpaceGuid.PcdGpioTlmmCtlOffset|0x1000
+  gQcomTokenSpaceGuid.PcdGpioTlmmCtlElementSize|0x10
+  gQcomTokenSpaceGuid.PcdGpioTlmmIntrCfgOffset|0x1008
+  gQcomTokenSpaceGuid.PcdGpioTlmmIntrCfgElementSize|0x10
+  gQcomTokenSpaceGuid.PcdGpioTlmmIntrStatusOffset|0x100c
+  gQcomTokenSpaceGuid.PcdGpioTlmmIntrStatusElementSize|0x10
+  gQcomTokenSpaceGuid.PcdGpioTlmmIntrTargetOffset|0x1008
+  gQcomTokenSpaceGuid.PcdGpioTlmmIntrTargetElementSize|0x10
+  gQcomTokenSpaceGuid.PcdGpioTlmmIntrEnableBit|0
+  gQcomTokenSpaceGuid.PcdGpioTlmmIntrStatusBit|0
+  gQcomTokenSpaceGuid.PcdGpioTlmmIntrAckHigh|FALSE
+  gQcomTokenSpaceGuid.PcdGpioTlmmIntrTargetBit|5
+  gQcomTokenSpaceGuid.PcdGpioTlmmIntrTargetKpssValue|4
+  gQcomTokenSpaceGuid.PcdGpioTlmmIntrRawStatusBit|4
+  gQcomTokenSpaceGuid.PcdGpioTlmmIntrPolarityBit|1
+  gQcomTokenSpaceGuid.PcdGpioTlmmIntrDetectionBit|2
+  gQcomTokenSpaceGuid.PcdGpioTlmmIntrDetectionWidth|2
+  gQcomTokenSpaceGuid.PcdGpioTlmmInBit|0
+  gQcomTokenSpaceGuid.PcdGpioTlmmOutBit|1
+  gQcomTokenSpaceGuid.PcdGpioTlmmOeBit|9
+  gQcomTokenSpaceGuid.PcdGpioTlmmMuxBit|2
+  gQcomTokenSpaceGuid.PcdGpioTlmmDrvBit|6
+  gQcomTokenSpaceGuid.PcdGpioTlmmPullBit|0
+  gQcomTokenSpaceGuid.PcdGpioTlmmNumFunctions|12
+
 [LibraryClasses]
   PlatformPrePiLib|MSM8939v2Pkg/Library/PlatformPrePiLib/PlatformPrePiLib.inf
   AcpiPlatformUpdateLib|MSM8939v2Pkg/Library/AcpiPlatformUpdateLib/AcpiPlatformUpdateLib.inf
   HwResetSystemLib|ArmPkg/Library/ArmSmcPsciResetSystemLib/ArmSmcPsciResetSystemLib.inf
   ResetSystemLib|ArmPkg/Library/ArmSmcPsciResetSystemLib/ArmSmcPsciResetSystemLib.inf
   SoCPlatformLib|MSM8939v2Pkg/Library/SoCPlatformLib/SoCPlatformLib.inf
-
-#[Components]
-#  MSM8939v2Pkg/Drivers/SmBiosTableDxe/SmBiosTableDxe.inf
-
+  InterruptsLib|MSM8939v2Pkg/Library/InterruptsLib/InterruptsLib.inf
+  KeypadDeviceHelperLib|MSM8939v2Pkg/Library/KeypadDeviceHelperLib/KeypadDeviceHelperLib.inf
+  KeypadDeviceLib|MSM8939v2Pkg/Library/KeypadDeviceLib/KeypadDeviceLib.inf
+  SpmiLib|MSM8939v2Pkg/Drivers/SpmiDxe/SpmiImplLib.inf
+  GpioTlmmLib|MSM8939v2Pkg/Drivers/GpioTlmmDxe/GpioTlmmImplLib.inf
+  Pm8x41Lib|MSM8939v2Pkg/Drivers/Pm8x41Dxe/Pm8x41ImplLib.inf
+  MallocLib|MSM8939v2Pkg/Library/MallocLib/MallocLib.inf
 !include QcomPkg/QcomPkg.dsc.inc

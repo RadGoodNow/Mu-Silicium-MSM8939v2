@@ -28,6 +28,12 @@ APRIORI DXE {
 !if $(USE_CUSTOM_DISPLAY_DRIVER) == 0
   INF SiliciumPkg/Drivers/SimpleFbDxe/SimpleFbDxe.inf
 !endif
+  INF MSM8939v2Pkg/Drivers/SpmiDxe/SpmiDxe.inf
+  INF MSM8939v2Pkg/Drivers/GpioTlmmDxe/GpioTlmmDxe.inf
+  INF MSM8939v2Pkg/Drivers/GpioTlmmInterruptDxe/GpioTlmmInterruptDxe.inf
+  #INF MSM8939v2Pkg/Drivers/GenericKeypadDeviceDxe/GenericKeypadDeviceDxe.inf
+  #  INF MSM8939v2Pkg/Drivers/KeypadDxe/KeypadDxe.inf
+  INF MSM8939v2Pkg/Drivers/Pm8x41Dxe/Pm8x41Dxe.inf
   INF SiliciumPkg/Drivers/KeypadDeviceDxe/KeypadDeviceDxe.inf
   INF SiliciumPkg/Drivers/KeypadDxe/KeypadDxe.inf
   INF EmbeddedPkg/SimpleTextInOutSerial/SimpleTextInOutSerial.inf

@@ -33,8 +33,9 @@
   DeviceMemoryMapLib|idoPkg/Library/DeviceMemoryMapLib/DeviceMemoryMapLib.inf
   DeviceConfigurationMapLib|idoPkg/Library/DeviceConfigurationMapLib/DeviceConfigurationMapLib.inf
   DevicePrePiLib|idoPkg/Library/DevicePrePiLib/DevicePrePiLib.inf
-  KeypadDeviceLib|idoPkg/Library/KeypadDeviceLib/KeypadDeviceLib.inf
-
+  KeypadDeviceHelperLib|MSM8939v2Pkg/Library/KeypadDeviceHelperLib/KeypadDeviceHelperLib.inf
+  KeypadDeviceLib|MSM8939v2Pkg/Library/KeypadDeviceLib/KeypadDeviceLib.inf
+  MallocLib|MSM8939v2Pkg/Library/MallocLib/MallocLib.inf
 [PcdsFixedAtBuild]
   # DDR Start Address
   gArmTokenSpaceGuid.PcdSystemMemoryBase|0x83200000
@@ -70,6 +71,8 @@
   # SD Card Slot
   gQcomPkgTokenSpaceGuid.PcdInitCardSlot|TRUE
 
+  # SoC Drivers SPMI
+  gQcomTokenSpaceGuid.PcdSpmiBaseAddress|0x02000000
   # USB Controller
   gQcomPkgTokenSpaceGuid.PcdStartUsbController|TRUE
 
@@ -85,7 +88,13 @@
 
 
 [Components]
-  SiliciumPkg/Drivers/KeypadDxe/KeypadDxe.inf
+#  MSM8939v2Pkg/Drivers/SmBiosTableDxe/SmBiosTableDxe.inf
+  MSM8939v2Pkg/Drivers/GpioTlmmDxe/GpioTlmmDxe.inf
+  MSM8939v2Pkg/Drivers/GpioTlmmInterruptDxe/GpioTlmmInterruptDxe.inf
+  #MSM8939v2Pkg/Drivers/GenericKeypadDeviceDxe/GenericKeypadDeviceDxe.inf
+  #MSM8939v2Pkg/Drivers/KeypadDxe/KeypadDxe.inf
   SiliciumPkg/Drivers/KeypadDeviceDxe/KeypadDeviceDxe.inf
-
+  SiliciumPkg/Drivers/KeypadDxe/KeypadDxe.inf
+  MSM8939v2Pkg/Drivers/Pm8x41Dxe/Pm8x41Dxe.inf
+  MSM8939v2Pkg/Drivers/SpmiDxe/SpmiDxe.inf
 !include MSM8939v2Pkg/MSM8939v2Pkg.dsc.inc
