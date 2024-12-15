@@ -583,9 +583,9 @@
 | Fingerprint Sensor   |                                   | ❌    |
 | NFC Sensor           |                                   | ❌    |
 | Battery              |                                   | ✅    |
-| USB Host Mode        | Depends What Mode it was in UEFI. | ✅    |
-| USB Device Mode      | Depends What Mode it was in UEFI. | ✅    |
-| USB Power Delivery   | Depends What Mode it was in UEFI. | ✅    |
+| USB Host Mode        |                                   | ✅    |
+| USB Device Mode      |                                   | ❌    |
+| USB Power Delivery   |                                   | ✅    |
 | Charging             |                                   | ❌    |
 | WLAN                 |                                   | ❌    |
 | CPU                  |                                   | ✅    |
@@ -1591,26 +1591,26 @@
 
 <img align="right" src="Resources/Pictures/Xiaomi-Mi-11-Lite-NE.png" width="500" alt="Preview">
 
-**State: Inactive** <br>
+**State: Active** <br>
 **Codename: lisa** <br>
-**Maintainer: [ETCHDEV](https://github.com/ETCHDEV/)** <br>
-**Contributors: People from Group** <br>
-**Tester: [ETCHDEV](https://github.com/ETCHDEV/)**
+**Maintainer: [Aistop](https://github.com/AistopGit/)** <br>
+**Contributors: [ETCHDEV](https://github.com/ETCHDEV), [Nikroks](https://github.com/N1kroks)** <br>
+**Tester: [Aistop](https://github.com/AistopGit/)**
 
 ### UEFI Status
 
-| Feature            | Description | State |
-|:-------------------|:------------|:-----:|
-| Display            |             | ✅    |
-| Internal Storage   |             | ✅    |
-| Side Buttons       |             | ✅    |
-| USB Host Mode      |             | ❌    |
-| USB Device Mode    |             | ✅    |
-| USB Power Delivery |             | ❌    |
-| Mass Storage       |             | ❔    |
-| SD Card            |             | ❌    |
-| Windows Boot       |             | ✅    |
-| Linux Boot         |             | ❌    |
+| Feature            | Description                | State |
+|:-------------------|:---------------------------|:-----:|
+| Display            |                            | ✅    |
+| Internal Storage   |                            | ✅    |
+| Side Buttons       |                            | ✅    |
+| USB Host Mode      |                            | ❌    |
+| USB Device Mode    |                            | ✅    |
+| USB Power Delivery |                            | ❌    |
+| Mass Storage       | Crashes on large transfers | ⚠️    |
+| SD Card            |                            | ❌    |
+| Windows Boot       |                            | ✅    |
+| Linux Boot         |                            | ❌    |
 
 ### OS Status
 
@@ -1618,38 +1618,38 @@
 <tr><th>Windows</th></tr>
 <tr><td>
 
-> NOTE: Needs Windows Drivers!
+> NOTE: Needs [Windows Drivers](https://github.com/AistopGit/windows_oem_xiaomi_lisa)!
 
-| Feature              | Description | State |
-|:---------------------|:------------|:-----:|
-| Internal Storage     |             | ✅    |
-| SD Card              |             | ❌    |
-| Side Buttons         |             | ✅    |
-| Proximity Sensor     |             | ❌    |
-| Light Sensor         |             | ❌    |
-| Accelerometer Sensor |             | ❌    |
-| Compass Sensor       |             | ❌    |
-| Fingerprint Sensor   |             | ❌    |
-| Hall Sensor          |             | ❌    |
-| NFC Sensor           |             | ❌    |
-| Temperature Sensor   |             | ✅    |
-| Battery              |             | ❌    |
-| USB Host Mode        |             | ✅    |
-| USB Device Mode      |             | ❌    |
-| USB Power Delivery   |             | ❌    |
-| Charging             |             | ❌    |
-| WLAN                 |             | ❌    |
-| CPU                  |             | ✅    |
-| Touchscreen          |             | ❌    |
-| Bluetooth            |             | ✅    |
-| GPS                  |             | ✅    |
-| Speakers             |             | ❌    |
-| Microphone           |             | ❌    |
-| GPU                  |             | ❌    |
-| Camera               |             | ❌    |
-| Mobile Data          |             | ❌    |
-| Display              |             | ✅    |
-| Vibration            |             | ❌    |
+| Feature              | Description           | State |
+|:---------------------|:----------------------|:-----:|
+| Internal Storage     |                       | ✅    |
+| SD Card              | Hot Plug doesn't work | ⚠️    |
+| Side Buttons         |                       | ✅    |
+| Proximity Sensor     |                       | ❌    |
+| Light Sensor         |                       | ❌    |
+| Accelerometer Sensor |                       | ❌    |
+| Compass Sensor       |                       | ❌    |
+| Fingerprint Sensor   |                       | ❌    |
+| Hall Sensor          |                       | ❌    |
+| NFC Sensor           |                       | ❌    |
+| Temperature Sensor   |                       | ✅    |
+| Battery              |                       | ✅    |
+| USB Host Mode        |                       | ✅    |
+| USB Device Mode      |                       | ✅    |
+| USB Power Delivery   |                       | ✅    |
+| Charging             |                       | ✅    |
+| WLAN                 |                       | ✅    |
+| CPU                  |                       | ✅    |
+| Touchscreen          |                       | ✅    |
+| Bluetooth            |                       | ✅    |
+| GPS                  |                       | ✅    |
+| Speakers             |                       | ❌    |
+| Microphone           |                       | ❌    |
+| GPU                  |                       | ❌    |
+| Camera               |                       | ❌    |
+| Mobile Data          |                       | ✅    |
+| Display              |                       | ✅    |
+| Vibration            |                       | ❌    |
 
 </td></tr> </table>
 
@@ -1803,8 +1803,8 @@
 
 **State: Inactive** <br>
 **Codename: surya** <br>
-**Maintainer: remtrik** <br>
-**Contributors: None** <br>
+**Maintainer: [remtrik](https://github.com/remtrik)** <br>
+**Contributors: [Nikroks](https://github.com/N1kroks)** <br>
 **Tester: None**
 
 ### UEFI Status
@@ -1819,9 +1819,53 @@
 | USB Device Mode    |                   | ❌    |
 | USB Power Delivery |                   | ❌    |
 | Mass Storage       | Needs Device Mode | ❌    |
-| SD Card            |                   | ❌    |
-| Windows Boot       |                   | ❌    |
+| SD Card            |                   | ✅    |
+| Windows Boot       |                   | ✅    |
 | Linux Boot         |                   | ❌    |
+
+### OS Status
+
+<table>
+<tr><th>Windows</th></tr>
+<tr><td>
+
+> NOTE: Needs Drivers!
+
+| Feature              | Description | State |
+|:---------------------|:------------|:-----:|
+| Internal Storage     |             | ✅    |
+| Side Buttons         |             | ✅    |
+| Proximity Sensor     |             | ❌    |
+| Light Sensor         |             | ❌    |
+| Accelerometer Sensor |             | ❌    |
+| Compass Sensor       |             | ❌    |
+| Gyroscope Sensor     |             | ❌    |
+| Barometer Sensor     |             | ❌    |
+| Geomagnetic Sensor   |             | ❌    |
+| Fingerprint Sensor   |             | ❌    |
+| Hall Sensor          |             | ❌    |
+| Gravity Sensor       |             | ❌    |
+| NFC Sensor           |             | ❌    |
+| Temperature Sensor   |             | ✅    |
+| Battery              |             | ✅    |
+| USB Host Mode        |             | ✅    |
+| USB Device Mode      |             | ❌    |
+| USB Power Delivery   |             | ❌    |
+| Charging             |             | ❌    |
+| WLAN                 |             | ❌    |
+| CPU                  |             | ✅    |
+| Touchscreen          |             | ❌    |
+| Bluetooth            |             | ❌    |
+| GPS                  |             | ✅    |
+| Speakers             |             | ❌    |
+| Microphone           |             | ❌    |
+| GPU                  |             | ❌    |
+| Camera               |             | ❌    |
+| Mobile Data          |             | ❌    |
+| Display              |             | ✅    |
+| Vibration            |             | ❌    |
+
+</td></tr> </table>
 
 ## Redmi Note 10 Pro
 
@@ -1953,10 +1997,10 @@
 | Internal Storage     |             | ✅    |
 | SD Card              |             | ✅    |
 | Side Buttons         |             | ✅    |
-| Proximity Sensor     |             | ❌    |
-| Light Sensor         |             | ❌    |
-| Accelerometer Sensor |             | ❌    |
-| Compass Sensor       |             | ❌    |
+| Proximity Sensor     |             | ✅    |
+| Light Sensor         |             | ✅    |
+| Accelerometer Sensor |             | ✅    |
+| Compass Sensor       |             | ✅    |
 | Gyroscope Sensor     |             | ❌    |
 | Fingerprint Sensor   |             | ❌    |
 | NFC Sensor           |             | ❌    |
@@ -2018,36 +2062,36 @@
 <tr><th>Windows</th><th>Linux</th></tr>
 <tr><td>
 
-| Feature              | Description | State |
-|:---------------------|:------------|:-----:|
-| Internal Storage     |             | ✅    |
-| SD Card              |             | ❌    |
-| Side Buttons         |             | ❌    |
-| Proximity Sensor     |             | ❌    |
-| Light Sensor         |             | ❌    |
-| Accelerometer Sensor |             | ❌    |
-| Compass Sensor       |             | ❌    |
-| Fingerprint Sensor   |             | ❌    |
-| NFC Sensor           |             | ❌    |
-| Temperature Sensor   |             | ❌    |
-| Battery              |             | ❌    |
-| USB Host Mode        |             | ✅    |
-| USB Device Mode      |             | ❌    |
-| USB Power Delivery   |             | ❌    |
-| Charging             |             | ❌    |
-| WLAN                 |             | ❌    |
-| CPU                  |             | ✅    |
-| Touchscreen          |             | ❌    |
-| Bluetooth            |             | ❌    |
-| GPS                  |             | ❌    |
-| Speakers             |             | ❌    |
-| 3.5mm Audio Jack     |             | ❌    |
-| Microphone           |             | ❌    |
-| GPU                  |             | ❌    |
-| Camera               |             | ❌    |
-| Mobile Data          |             | ❌    |
-| Display              |             | ✅    |
-| Vibration            |             | ❌    |
+| Feature              | Description         | State |
+|:---------------------|:--------------------|:-----:|
+| Internal Storage     |                     | ✅    |
+| SD Card              |Hot Plug doesn't work| ⚠️    |
+| Side Buttons         |                     | ❌    |
+| Proximity Sensor     |                     | ❌    |
+| Light Sensor         |                     | ❌    |
+| Accelerometer Sensor |                     | ❌    |
+| Compass Sensor       |                     | ❌    |
+| Fingerprint Sensor   |                     | ❌    |
+| NFC Sensor           |                     | ❌    |
+| Temperature Sensor   |                     | ❌    |
+| Battery              |                     | ❌    |
+| USB Host Mode        |                     | ✅    |
+| USB Device Mode      |                     | ❌    |
+| USB Power Delivery   |                     | ❌    |
+| Charging             |                     | ❌    |
+| WLAN                 |                     | ❌    |
+| CPU                  |                     | ✅    |
+| Touchscreen          |                     | ❌    |
+| Bluetooth            |                     | ❌    |
+| GPS                  |                     | ❌    |
+| Speakers             |                     | ❌    |
+| 3.5mm Audio Jack     |                     | ❌    |
+| Microphone           |                     | ❌    |
+| GPU                  |                     | ❌    |
+| Camera               |                     | ❌    |
+| Mobile Data          |                     | ❌    |
+| Display              |                     | ✅    |
+| Vibration            |                     | ❌    |
 
 </td><td>
 
@@ -2893,9 +2937,9 @@
 
 **State: Inactive** <br>
 **Codename: starlte** <br>
-**Maintainer: None** <br>
+**Maintainer: [Robotix](https://github.com/Robotix22/)** <br>
 **Contributors: None** <br>
-**Tester: None**
+**Tester: [Robotix](https://github.com/Robotix22/)**
 
 ### UEFI Status
 

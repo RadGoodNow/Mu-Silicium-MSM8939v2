@@ -131,6 +131,7 @@
   IoLib|MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic.inf
   UefiDecompressLib|MdePkg/Library/BaseUefiDecompressLib/BaseUefiDecompressLib.inf
   ImagePropertiesRecordLib|MdeModulePkg/Library/ImagePropertiesRecordLib/ImagePropertiesRecordLib.inf
+  MemoryBinOverrideLib|MdeModulePkg/Library/MemoryBinOverrideLibNull/MemoryBinOverrideLibNull.inf
 
   UefiLib|MdePkg/Library/UefiLib/UefiLib.inf
   HobLib|MdePkg/Library/DxeHobLib/DxeHobLib.inf
@@ -345,7 +346,12 @@
   EmbeddedPkg/MetronomeDxe/MetronomeDxe.inf
   EmbeddedPkg/RealTimeClockRuntimeDxe/RealTimeClockRuntimeDxe.inf {
     <LibraryClasses>
+!if $(USE_CUSTOM_TIMER) == 0
+      RealTimeClockLib|SiliciumPkg/Library/RealTimeClockLibNull/RealTimeClockLibNull.inf
+!else
+      # TODO: Make a Non Arch Timer Version.
       RealTimeClockLib|EmbeddedPkg/Library/TemplateRealTimeClockLib/TemplateRealTimeClockLib.inf
+!endif
   }
 
   # ACPI

@@ -111,7 +111,7 @@ SMBIOS_TABLE_TYPE0 mBIOSInfoType0 = {
 
 CHAR8 *mBIOSInfoType0Strings[] = {
   "Not Specified", // Vendor String
-  "3.0.1",         // BiosVersion String
+  "3.0.2",         // BiosVersion String
   __DATE__,        // BiosReleaseDate String
   NULL
 };
@@ -468,6 +468,7 @@ SMBIOS_TABLE_TYPE4 mProcessorInfoType4_a55 = {
 CHAR8 *mProcessorInfoType4Strings[] = {
   "Qualcomm",
   "Qualcomm Technologies Inc",
+  "Not Specified",
   "Not Specified",
   "Not Specified",
   NULL
