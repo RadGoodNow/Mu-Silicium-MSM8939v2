@@ -90,11 +90,11 @@
 
 <img align="right" src="Resources/Pictures/Nothing-Phone-2.png" width="500" alt="Preview">
 
-**State: Inactive** <br>
+**State: Active** <br>
 **Codename: pong** <br>
 **Maintainers: [index986](https://github.com/index986)** <br>
 **Contributors: [Robotix](https://github.com/Robotix22/), [N1kroks](https://github.com/N1kroks)** <br>
-**Testers: [index986](https://github.com/index986) [nokii1337](https://github.com/nokii1337), People from tg/discord nothing group**
+**Testers: [index986](https://github.com/index986), People from tg/discord nothing group**
 
 ### UEFI Status
 
@@ -103,10 +103,10 @@
 | Display            |                   | ✅    |
 | Internal Storage   |                   | ✅    |
 | Side Buttons       |                   | ✅    |
-| USB Host Mode      |                   | ✅    |
-| USB Device Mode    |                   | ❌    |
+| USB Host Mode      |                   | ❌    |
+| USB Device Mode    |                   | ✅    |
 | USB Power Delivery |                   | ❌    |
-| Mass Storage       | Needs Device Mode | ❌    |
+| Mass Storage       |                   | ✅    |
 | Windows Boot       |                   | ✅    |
 | Linux Boot         |                   | ❌    |
 
@@ -134,7 +134,7 @@
 | USB Power Delivery   |               | ❌    |
 | Charging             |               | ❌    |
 | WLAN                 |               | ❌    |
-| CPU                  | One Core Only | ⚠    |
+| CPU                  |               | ✅    |
 | Touchscreen          |               | ❌    |
 | Bluetooth            |               | ❌    |
 | GPS                  |               | ❌    |
@@ -314,11 +314,11 @@
 
 <img align="right" src="Resources/Pictures/Xiaomi-Mi-11.png" width="500" alt="Preview">
 
-**State: Inactive** <br>
+**State: Active** <br>
 **Codename: venus** <br>
-**Maintainer: [Daniel224455/Daniel6745](https://github.com/Daniel224455/)** <br>
+**Maintainer: [Daniel224455](https://github.com/Daniel224455/)** <br>
 **Contributors: [Robotix](https://github.com/Robotix22/)** <br>
-**Tester: [Daniel224455/Daniel6745](https://github.com/Daniel224455/)**
+**Tester: [Daniel224455](https://github.com/Daniel224455/)**
 
 ### UEFI Status
 
@@ -331,7 +331,7 @@
 | USB Device Mode    |                   | ❌    |
 | USB Power Delivery |                   | ❌    |
 | Mass Storage       | Needs Device Mode | ❌    |
-| Windows Boot       | Windows PE only   | ⚠️    |
+| Windows Boot       |                   | ✅    |
 | Linux Boot         |                   | ❌    |
 
 ### OS Status
@@ -342,8 +342,8 @@
 
 | Feature               | Description | State |
 |:----------------------|:------------|:-----:|
-| Internal Storage      |             | ❌    |
-| Side Buttons          |             | ❌    |
+| Internal Storage      |             | ✅    |
+| Side Buttons          |             | ✅    |
 | Proximity Sensor      |             | ❌    |
 | Light Sensor          |             | ❌    |
 | Accelerometer Sensor  |             | ❌    |
@@ -357,7 +357,7 @@
 | NFC Sensor            |             | ❌    |
 | Temperature Sensor    |             | ❌    |
 | Battery               |             | ❌    |
-| USB Host Mode         |             | ❌    |
+| USB Host Mode         |             | ✅    |
 | USB Device Mode       |             | ❌    |
 | USB Power Delivery    |             | ❌    |
 | Charging              |             | ❌    |
