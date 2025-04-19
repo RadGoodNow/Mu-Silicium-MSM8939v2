@@ -44,15 +44,14 @@
 
   # SmBios
   gSiliciumPkgTokenSpaceGuid.PcdSmbiosProcessorModel|"Snapdragon (TM) 616 @ 1.70 GHz"
-  gSiliciumPkgTokenSpaceGuid.PcdSmbiosProcessorRetailModel|"MSM8939v2"
+  gSiliciumPkgTokenSpaceGuid.PcdSmbiosProcessorCodename|"MSM8939v2"
 
   # CPU
   gArmPlatformTokenSpaceGuid.PcdCoreCount|8
   gArmPlatformTokenSpaceGuid.PcdClusterCount|2
-  gQcomPkgTokenSpaceGuid.PcdHasLevel3Cache|FALSE
 
   # CPU Max Freq
-  gQcomPkgTokenSpaceGuid.PcdMaxFreqSupported|FALSE
+  gSiliciumPkgTokenSpaceGuid.PcdSmbiosMaxCpuFreq|FALSE
 
   # Platform Pei HOBs
   gQcomPkgTokenSpaceGuid.PcdEnableInfoBlkHob|TRUE

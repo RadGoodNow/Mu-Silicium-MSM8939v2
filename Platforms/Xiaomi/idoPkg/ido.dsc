@@ -51,7 +51,7 @@
   gEmbeddedTokenSpaceGuid.PcdPrePiStackSize|0x00041000
 
   # SmBios
-  gSiliciumPkgTokenSpaceGuid.PcdSmbiosSystemVendor|"Xiaomi Inc"
+  gSiliciumPkgTokenSpaceGuid.PcdSmbiosSystemManufacturer|"Xiaomi Inc"
   gSiliciumPkgTokenSpaceGuid.PcdSmbiosSystemModel|"Redmi 3"
   gSiliciumPkgTokenSpaceGuid.PcdSmbiosSystemRetailModel|"ido"
   gSiliciumPkgTokenSpaceGuid.PcdSmbiosSystemRetailSku|"Redmi_3_ido"

@@ -12,7 +12,6 @@ gDeviceMemoryDescriptorEx[] = {
   {"DXE Heap",          0x90000000, 0x04500000, AddMem, SYS_MEM, SYS_MEM_CAP, Conv,   WRITE_BACK_XN},
   {"UEFI FD",           0x94500000, 0x00200000, AddMem, SYS_MEM, SYS_MEM_CAP, BsData, WRITE_BACK},
   {"UEFI Stack",        0x94700000, 0x00041000, AddMem, SYS_MEM, SYS_MEM_CAP, BsData, WRITE_BACK_XN},
-
   /* RAM partition regions */
   {"RAM Partition",     0x94741000, 0x6C400000, AddMem, SYS_MEM, SYS_MEM_CAP, Conv,   WRITE_BACK_XN},
 
