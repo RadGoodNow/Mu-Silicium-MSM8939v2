@@ -430,7 +430,8 @@
 <tr><th>Windows</th><th>Linux</th></tr>
 <tr><td>
 
-> NOTE: Only Windows Builds that are Build Nr. 26090 or above work!
+> [!NOTE]
+> Only Windows Builds that are Build Nr. 26090 or above work!
 
 | Feature              | Description   | State |
 |:---------------------|:--------------|:-----:|
@@ -439,8 +440,8 @@
 | Proximity Sensor     |               | ❌    |
 | Light Sensor         |               | ❌    |
 | Accelerometer Sensor |               | ❌    |
-| Compass Sensor       |               | ❌    | 
 | Gyroscope Sensor     |               | ❌    |
+| Magnetometer Sensor  |               | ❌    |
 | Fingerprint Sensor   |               | ❌    |
 | NFC Sensor           |               | ❌    |
 | Temperature Sensor   |  Only battery | ⚠️    |
@@ -465,22 +466,24 @@
 </td>
 <td>
 
-> NOTE: Linux Requires: [Mainline kernel](https://github.com/jiganomegsdfdf/aston-mainline)
+> [!NOTE]
+> Linux Requires: [Mainline kernel](https://github.com/jiganomegsdfdf/aston-mainline)<br>
+> Recommended Guide: [Ubuntu](https://github.com/jiganomegsdfdf/ubuntu-oneplus-aston)
 
 | Feature              | Description   | State |
 |:---------------------|:--------------|:-----:|
 | Internal Storage     |               | ✅    |
 | Side Buttons         |               | ✅    |
 | Proximity Sensor     |               | ❌    |
-| Light Sensor         |               | ❌    |
+| Light Sensor         |               | ✅    |
 | Accelerometer Sensor |               | ❌    |
-| Compass Sensor       |               | ❌    | 
-| Gyroscope Sensor     |Userspace issue| ⚠️    |
+| Gyroscope Sensor     |               | ❌    |
+| Magnetometer Sensor  |Userspace issue| ⚠️    |
 | Fingerprint Sensor   |               | ❌    |
 | NFC Sensor           |    Untested   | ⚠️    |
 | Temperature Sensor   |               | ✅    |
 | Battery              |               | ✅    |
-| USB Host Mode        |               | ❔    |
+| USB Host Mode        |               | ❌    |
 | USB Device Mode      |               | ✅    |
 | USB Power Delivery   |               | ❌    |
 | Charging             |  100W = 1.1W  | ⚠️    |
@@ -489,10 +492,10 @@
 | Touchscreen          |               | ✅    |
 | Bluetooth            |               | ✅    |
 | GPS                  |               | ❌    |
-| Speakers             |               | ❌    |
-| Microphone           |               | ❌    |
+| Speakers             |               | ✅    |
+| Microphone           |               | ✅    |
 | GPU                  |               | ✅    |
-| Camera               |               | ❌    |
+| Camera               |Only Front,Macro,UW| ✅    |
 | Mobile Data          |               | ❌    |
 | Display              |               | ✅    | 
 | Vibration            |               | ❌    |
@@ -1589,10 +1592,10 @@
 | Display            |                | ✅    |
 | Internal Storage   |                | ✅    |
 | Side Buttons       |                | ✅    |
-| USB Host Mode      |                | ✅    |
+| USB Host Mode      |                | ❌    |
 | USB Device Mode    |                | ✅    |
-| USB Power Delivery |                | ✅    |
-| Mass Storage       | Unknown Issues | ❌    |
+| USB Power Delivery |                | ❌    |
+| Mass Storage       |                | ✅    |
 | Windows Boot       |                | ✅    |
 | Linux Boot         |                | ✅    |
 
@@ -1601,8 +1604,6 @@
 <table>
 <tr><th>Windows</th><th>Linux</th></tr>
 <tr><td>
-
-> NOTE: Needs [Windows Drivers](https://github.com/N1kroks/SM8250-Drivers)!
 
 | Feature              | Description                       | State |
 |:---------------------|:----------------------------------|:-----:|
@@ -1615,7 +1616,7 @@
 | Gyroscope Sensor     |                                   | ❌    |
 | Fingerprint Sensor   |                                   | ❌    |
 | NFC Sensor           |                                   | ❌    |
-| Battery              |                                   | ✅    |
+| Battery              |                                   | ❌    |
 | USB Host Mode        |                                   | ❌    |
 | USB Device Mode      |                                   | ✅    |
 | USB Power Delivery   |                                   | ❌    |
@@ -1647,7 +1648,7 @@
 | Compass Sensor       |                                   | ✅    |
 | Gyroscope Sensor     |                                   | ❌    |
 | Fingerprint Sensor   |                                   | ❌    |
-| NFC Sensor           |                                   | ❌    |
+| NFC Sensor           |                                   | ✅    |
 | Battery              |                                   | ✅    |
 | USB Host Mode        |                                   | ✅    |
 | USB Device Mode      |                                   | ✅    |
@@ -1846,12 +1847,12 @@
 | USB Power Delivery |             | ❌    |
 | Mass Storage       |             | ✅    |
 | Windows Boot       |             | ✅    |
-| Linux Boot         | Untested    | ❔    |
+| Linux Boot         |             | ✅    |
 
 ### OS Status
 
 <table>
-<tr><th>Windows</th></tr>
+<tr><th>Windows</th><th>Linux</th></tr>
 <tr><td>
 
 > NOTE: Needs [Windows Drivers](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/releases/tag/Drivers)!
@@ -1883,7 +1884,39 @@
 | Display              |                                                              | ✅    |
 | Vibration            |                                                              | ❌    |
 
-</td></tr> </table>
+</td>
+<td>
+
+> NOTE: Linux Requires: [Mainline kernel](https://gitlab.com/sm8150-mainline/linux)
+
+| Feature              | Description                                                  | State |
+|:---------------------|:-------------------------------------------------------------|:-----:|
+| Internal Storage     |                                                              | ✅    |
+| Side Buttons         |                                                              | ✅    |
+| Proximity Sensor     |                                                              | ❌    |
+| Accelerometer Sensor |                                                              | ❌    |
+| Compass Sensor       |                                                              | ❌    |
+| Gyroscope Sensor     |                                                              | ❌    |
+| Fingerprint Sensor   |                                                              | ❌    |
+| NFC Sensor           |                                                              | ❌    |
+| Temperature Sensor   |                                                              | ✅    |
+| Battery              |                                                              | ✅    |
+| USB                  |                                                              | ✅    |
+| Charging             |                                                              | ✅    |
+| WLAN                 |                                                              | ✅    |
+| CPU                  |                                                              | ✅    |
+| Touchscreen          |                                                              | ✅    |
+| Bluetooth            |                                                              | ✅    |
+| GPS                  |                                                              | ❌    |
+| Speakers             | Top right speaker doesn't work                               | ⚠    |
+| Microphone           |                                                              | ✅    |
+| GPU                  |                                                              | ✅    |
+| Flashlight           |                                                              | ❌    |
+| Camera               |                                                              | ❌    |
+| Display              |                                                              | ✅    |
+| Vibration            |                                                              | ❌    |
+
+</td></tr></table>
 
 ## Xiaomi Mi 9
 
