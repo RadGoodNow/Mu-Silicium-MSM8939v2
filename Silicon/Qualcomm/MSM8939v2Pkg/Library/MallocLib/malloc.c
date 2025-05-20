@@ -24,13 +24,13 @@ typedef struct {
 
 VOID *memalign(UINTN Boundary, UINTN Size)
 {
-  VOID         *BaseMemory;
+  VOID         *BaseMemory = NULL;
   CPOOL_HEAD   *Head;
   VOID         *RetVal;
   UINTN         HeadSize;
   UINTN         NodeSize;
   ALLOCATION_TYPE Type;
-  BaseMemory = NULL;
+
   if (Size == 0) {
     DEBUG((DEBUG_ERROR, "ERROR memalign: Zero Size\n"));
     return NULL;

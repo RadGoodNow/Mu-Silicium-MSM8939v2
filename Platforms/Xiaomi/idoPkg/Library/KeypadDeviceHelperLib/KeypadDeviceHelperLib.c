@@ -6,13 +6,13 @@ UINTN gBitmapUnicodeChars[BITMAP_NUM_WORDS(MAX_UNCODE_CHAR)] = {0};
 
 EFI_KEY_DATA gKeyDataPowerDown = {
   .Key = {
-    .UnicodeChar = (CHAR16)'r',
+    .UnicodeChar = (CHAR16)'s',
   }
 };
 
 EFI_KEY_DATA gKeyDataPowerUp = {
   .Key = {
-    .UnicodeChar = (CHAR16)'s',
+    .UnicodeChar = (CHAR16)'e',
   }
 };
 

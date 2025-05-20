@@ -96,10 +96,9 @@
   ResetSystemLib|ArmPkg/Library/ArmSmcPsciResetSystemLib/ArmSmcPsciResetSystemLib.inf
   SoCPlatformLib|MSM8939v2Pkg/Library/SoCPlatformLib/SoCPlatformLib.inf
   InterruptsLib|MSM8939v2Pkg/Library/InterruptsLib/InterruptsLib.inf
-  KeypadDeviceHelperLib|MSM8939v2Pkg/Library/KeypadDeviceHelperLib/KeypadDeviceHelperLib.inf
-  KeypadDeviceLib|MSM8939v2Pkg/Library/KeypadDeviceLib/KeypadDeviceLib.inf
   SpmiLib|MSM8939v2Pkg/Drivers/SpmiDxe/SpmiImplLib.inf
   GpioTlmmLib|MSM8939v2Pkg/Drivers/GpioTlmmDxe/GpioTlmmImplLib.inf
   Pm8x41Lib|MSM8939v2Pkg/Drivers/Pm8x41Dxe/Pm8x41ImplLib.inf
   MallocLib|MSM8939v2Pkg/Library/MallocLib/MallocLib.inf
+  QcomPlatformClockInitLib|MSM8939v2Pkg/Library/QcomPlatformClockInitLib/QcomPlatformClockInitLib.inf
 !include QcomPkg/QcomPkg.dsc.inc

@@ -28,6 +28,8 @@ APRIORI DXE {
 !if $(USE_CUSTOM_DISPLAY_DRIVER) == 0
   INF SiliciumPkg/Drivers/SimpleFbDxe/SimpleFbDxe.inf
 !endif
+  INF MSM8939v2Pkg/Drivers/BamDxe/BamDxe.inf
+  INF MSM8939v2Pkg/Drivers/ClockDxe/ClockDxe.inf
   INF MSM8939v2Pkg/Drivers/SpmiDxe/SpmiDxe.inf
   INF MSM8939v2Pkg/Drivers/GpioTlmmDxe/GpioTlmmDxe.inf
   INF MSM8939v2Pkg/Drivers/GpioTlmmInterruptDxe/GpioTlmmInterruptDxe.inf

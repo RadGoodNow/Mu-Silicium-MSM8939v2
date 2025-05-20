@@ -32,16 +32,62 @@
 [LibraryClasses]
   DeviceMemoryMapLib|idoPkg/Library/DeviceMemoryMapLib/DeviceMemoryMapLib.inf
   DeviceConfigurationMapLib|idoPkg/Library/DeviceConfigurationMapLib/DeviceConfigurationMapLib.inf
-  DevicePrePiLib|idoPkg/Library/DevicePrePiLib/DevicePrePiLib.inf
-  KeypadDeviceHelperLib|MSM8939v2Pkg/Library/KeypadDeviceHelperLib/KeypadDeviceHelperLib.inf
-  KeypadDeviceLib|MSM8939v2Pkg/Library/KeypadDeviceLib/KeypadDeviceLib.inf
+#  DevicePrePiLib|idoPkg/Library/DevicePrePiLib/DevicePrePiLib.inf
   MallocLib|MSM8939v2Pkg/Library/MallocLib/MallocLib.inf
+  QcomDxeTimerLib|MSM8939v2Pkg/Library/QTimerLib/QcomQTimerDxeTimerLib.inf
+  GpioTlmmLib|MSM8939v2Pkg/Drivers/GpioTlmmDxe/GpioTlmmLib.inf
+  SpmiLib|MSM8939v2Pkg/Drivers/SpmiDxe/SpmiLib.inf
+  Pm8x41Lib|MSM8939v2Pkg/Drivers/Pm8x41Dxe/Pm8x41Lib.inf
+  ClockLib|MSM8939v2Pkg/Drivers/ClockDxe/ClockImplLib.inf
+  KeypadDeviceHelperLib|idoPkg/Library/KeypadDeviceHelperLib/KeypadDeviceHelperLib.inf
+  KeypadDeviceLib|idoPkg/Library/KeypadDeviceLib/KeypadDeviceLib.inf
+  AcpiDeviceUpdateLib|SiliciumPkg/Library/AcpiDeviceUpdateLibNull/AcpiDeviceUpdateLibNull.inf
+  Pm8x41Lib|MSM8939v2Pkg/Drivers/Pm8x41Dxe/Pm8x41ImplLib.inf
 [PcdsFixedAtBuild]
   # DDR Start Address
   gArmTokenSpaceGuid.PcdSystemMemoryBase|0x83200000
 
   # Device Maintainer
   gSiliciumPkgTokenSpaceGuid.PcdDeviceMaintainer|"Daniel224455,RadGoodNow"
+
+  # KANGING PROCESSING STARTS NOWWWWW
+# SoC Drivers GPIO TLMM
+  gQcomTokenSpaceGuid.PcdGpioTlmmBaseAddress|0x1000000
+  gQcomTokenSpaceGuid.PcdGpioTlmmSummaryIrq|240
+  gQcomTokenSpaceGuid.PcdGpioTlmmIoOffset|0x1004
+  gQcomTokenSpaceGuid.PcdGpioTlmmIoElementSize|0x10
+  gQcomTokenSpaceGuid.PcdGpioTlmmCtlOffset|0x1000
+  gQcomTokenSpaceGuid.PcdGpioTlmmCtlElementSize|0x10
+  gQcomTokenSpaceGuid.PcdGpioTlmmIntrCfgOffset|0x1008
+  gQcomTokenSpaceGuid.PcdGpioTlmmIntrCfgElementSize|0x10
+  gQcomTokenSpaceGuid.PcdGpioTlmmIntrStatusOffset|0x100c
+  gQcomTokenSpaceGuid.PcdGpioTlmmIntrStatusElementSize|0x10
+  gQcomTokenSpaceGuid.PcdGpioTlmmIntrTargetOffset|0x1008
+  gQcomTokenSpaceGuid.PcdGpioTlmmIntrTargetElementSize|0x10
+  gQcomTokenSpaceGuid.PcdGpioTlmmIntrEnableBit|0
+  gQcomTokenSpaceGuid.PcdGpioTlmmIntrStatusBit|0
+  gQcomTokenSpaceGuid.PcdGpioTlmmIntrAckHigh|FALSE
+  gQcomTokenSpaceGuid.PcdGpioTlmmIntrTargetBit|5
+  gQcomTokenSpaceGuid.PcdGpioTlmmIntrTargetKpssValue|4
+  gQcomTokenSpaceGuid.PcdGpioTlmmIntrRawStatusBit|4
+  gQcomTokenSpaceGuid.PcdGpioTlmmIntrPolarityBit|1
+  gQcomTokenSpaceGuid.PcdGpioTlmmIntrDetectionBit|2
+  gQcomTokenSpaceGuid.PcdGpioTlmmIntrDetectionWidth|2
+  gQcomTokenSpaceGuid.PcdGpioTlmmInBit|0
+  gQcomTokenSpaceGuid.PcdGpioTlmmOutBit|1
+  gQcomTokenSpaceGuid.PcdGpioTlmmOeBit|9
+  gQcomTokenSpaceGuid.PcdGpioTlmmMuxBit|2
+  gQcomTokenSpaceGuid.PcdGpioTlmmDrvBit|6
+  gQcomTokenSpaceGuid.PcdGpioTlmmPullBit|0
+  gQcomTokenSpaceGuid.PcdGpioTlmmNumFunctions|12
+
+  gQcomTokenSpaceGuid.PcdSpmiBaseAddress|0x02000000
+
+  gQcomTokenSpaceGuid.PcdSdccMciHcMode|0x00000078
+  gQcomTokenSpaceGuid.PcdSdccHcPwrctlStatusReg|0x000000DC
+  gQcomTokenSpaceGuid.PcdSdccHcPwrctlMaskReg|0x000000E0
+  gQcomTokenSpaceGuid.PcdSdccHcPwrctlClearReg|0x000000E4
+  gQcomTokenSpaceGuid.PcdSdccHcPwrctlCtlReg|0x000000E8
 
   # CPU Vector Address
   #gArmTokenSpaceGuid.PcdCpuVectorBaseAddress|0x5FF8C000
@@ -91,10 +137,10 @@
 #  MSM8939v2Pkg/Drivers/SmBiosTableDxe/SmBiosTableDxe.inf
   MSM8939v2Pkg/Drivers/GpioTlmmDxe/GpioTlmmDxe.inf
   MSM8939v2Pkg/Drivers/GpioTlmmInterruptDxe/GpioTlmmInterruptDxe.inf
-  #MSM8939v2Pkg/Drivers/GenericKeypadDeviceDxe/GenericKeypadDeviceDxe.inf
-  #MSM8939v2Pkg/Drivers/KeypadDxe/KeypadDxe.inf
   SiliciumPkg/Drivers/KeypadDeviceDxe/KeypadDeviceDxe.inf
   SiliciumPkg/Drivers/KeypadDxe/KeypadDxe.inf
   MSM8939v2Pkg/Drivers/Pm8x41Dxe/Pm8x41Dxe.inf
   MSM8939v2Pkg/Drivers/SpmiDxe/SpmiDxe.inf
+  MSM8939v2Pkg/Drivers/BamDxe/BamDxe.inf
+  MSM8939v2Pkg/Drivers/ClockDxe/ClockDxe.inf
 !include MSM8939v2Pkg/MSM8939v2Pkg.dsc.inc
